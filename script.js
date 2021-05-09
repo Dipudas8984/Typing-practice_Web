@@ -44,6 +44,13 @@ function spellCheck() {
     if (textEntered == originText) {
         textW.style.borderColor = 'orange';
         clearInterval(interval);
+        timetaken = theTimer.innerHTML.split(':');
+        var totalTime =  timetaken[0] + timetaken[1]/60 
+
+        console.log(((textEntered.length)/5)/totalTime);
+        console.log(textEntered.length, totalTime);
+
+
 
     }else{
         if (textEntered == originTextMatch) {
@@ -65,4 +72,10 @@ function start() {
 
 textArea.addEventListener('keypress', start, false);
 textArea.addEventListener('keyup', spellCheck, false);
+textArea.addEventListener('keydown', function(event){
+    if(event.key === "Escape"){
+        reset();
+    }
+})
 resetButton.addEventListener('click', reset, false)
+
