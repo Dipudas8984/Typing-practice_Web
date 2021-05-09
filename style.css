@@ -12,16 +12,21 @@ body {
     /* border-radius: 10px; */
     text-align: center;
 }
-.footer {
 
-}
 .origin-text {
     /* margin-top: 20px; */
     padding: 20px 50px;
     /* border-radius: 10px; */
     background-color: transparent;
     color: white;
+    
 }
+
+@media only screen and (max-width: 600px) {
+    .origin-text {
+        
+    }
+  }
 
 .text {
     margin: 0;

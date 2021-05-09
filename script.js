@@ -3,8 +3,7 @@ const textArea = document.querySelector('#textArea');
 const originText = document.querySelector('.text').innerHTML
 const resetButton = document.querySelector('#reset')
 const theTimer = document.querySelector('.timer')
-const btn = document.querySelector('#addText')
-
+textArea.value = ""
 let timer = [0,0,0,0];
 let interval;
 let timeRunning = false;
@@ -85,4 +84,3 @@ function greet() {
     
 
 }
-btn.addEventListener('click', greet, false)
