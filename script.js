@@ -3,6 +3,7 @@ const textArea = document.querySelector('#textArea');
 const originText = document.querySelector('.text').innerHTML
 const resetButton = document.querySelector('#reset')
 const theTimer = document.querySelector('.timer')
+const btn = document.querySelector('#addText')
 
 let timer = [0,0,0,0];
 let interval;
@@ -43,12 +44,14 @@ function spellCheck() {
     let originTextMatch = originText.substring(0, textEntered.length);
     if (textEntered == originText) {
         textW.style.borderColor = 'orange';
+        
         clearInterval(interval);
         timetaken = theTimer.innerHTML.split(':');
         var totalTime =  timetaken[0] + timetaken[1]/60 
 
         console.log(((textEntered.length)/5)/totalTime);
         console.log(textEntered.length, totalTime);
+        
 
 
 
@@ -78,4 +81,8 @@ textArea.addEventListener('keydown', function(event){
     }
 })
 resetButton.addEventListener('click', reset, false)
+function greet() {
+    
 
+}
+btn.addEventListener('click', greet, false)
