@@ -20,6 +20,8 @@ Such was my naught brother.`, `A little panda picks up a pumpkin and wants to ta
 Suddenly she sees a bear riding a bike toward her. She watches the bike. "I know! I have a good idea." she jumps and shouts happily, "I can roll a pumpkin. It's like a wheel."
 So she rolls the pumpkin to her home. When her mother sees the big pumpkin, she is surprised, "Oh, my God! How can you carry it home?" the little panda answers proudly, "I can't lift it, but I can roll it." Her mother smiled and says，"What a clever girl! Use you heard to do something,"`, `Tom is a little boy, and he is only seven years old. Once he goes to a cinema. It is the first time for him to do that. He buys a ticket and goes in. But after two or three minutes he comes out, and buys the second ticket and goes in again. After a few minutes he comes out again and buys the third ticket. Two or three minutes after that he comes out and asks for another ticket. But a girl asks him,"Why do you buy so many tickets? How many friends do you meet?" "No, I have no friends here, but a big woman always stops me at the door and cuts up my ticket."`, `A little kid fell in love with another little kid, a school mate. Sometimes the kids think they fall in love when they have
 a crush on someone else in the class, when they're eight or ten years old or something like that. So the eight-year-old kid came back home and asked his father, "Father, is it expensive to be married?" And the father said, "Yes, son, it is very expensive." So the son asked, "How much does it cost?" And the father said, "I don't know, son. I'm still paying."`]
+
+
 let timer = [0,0,0,0];
 let interval;
 let timeRunning = false;
@@ -33,7 +35,7 @@ function addText(){
             document.querySelector('#text').innerHTML = originText
         }
         else {
-            var originText = document.querySelector('#text').innerHTML
+            originText = document.querySelector('#text').innerHTML
             document.getElementById('addtext').value = ''
         }
     }
