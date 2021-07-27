@@ -22,11 +22,11 @@ body {
     
 }
 
-/* @media only screen and (max-width: 600px) {
-    .origin-text {
-        
+@media only screen and (max-width: 600px) {
+    #reset {
+        margin-left: 70%;
     }
-  } */
+  }
 
 .text {
     margin: 0;
