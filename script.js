@@ -33,6 +33,7 @@ function addText(){
 
         if (originText.replace(/ /g, "") != ''){
             document.querySelector('#text').innerHTML = originText
+            document.getElementById('addtext').value = ''
         }
         else {
             originText = document.querySelector('#text').innerHTML
