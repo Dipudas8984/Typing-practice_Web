@@ -13,51 +13,34 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Typing Test</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+          
         </div>
       </nav>
 
-        <div class="">
+        <!-- <div class=""> -->
             <!-- <div class="row">
                 <div class="col-xs-12 header">
                     <h4>bulding a app</h4>
                 </div>
             </div> -->
-
+            <p>
+              <a id="addtextbtn" class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Add custom text here
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+              <p id="sugg">*not more than 700 characters</p>
+                <input id="addtext" type="text">
+              <button class="" id="atsb" onclick="addText()">Add</button>
+              </div>
+            </div>
             <div class="">
                 <div class="col-xs-12 origin-text">
-                    <h4 class='text'>type this thing to that box</h4>
+                    <h4></h4><h4 id='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate culpa aliquam nobis tenetur, quia et harum rerum fugiat dolore laboriosam tempore nulla hic quae, ab dolor numquam unde quam dolorum vero neque. Deserunt quisquam vero eligendi odio cupiditate id ipsa aspernatur aut, quae repellat aliquam libero voluptas dolorem aperiam placeat ad, ipsam minima quaerat alias assumenda a dolor asperiores. Esse optio praesentium, officiis alias facere iusto quasi consequatur fuga, ullam facilis ad numquam, rem commodi architecto excepturi? Et tempora voluptas esse numquam nesciunt repellendus soluta perferendis id fugit eum! Totam.</h4>
                 </div>
             </div>
             
@@ -78,7 +61,7 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <button id="reset" class="btn btn-primary">stop</button>
+                                <button id="reset" class="btn btn-danger">stop</button>
                             </div>
                         </div>
                     </div>

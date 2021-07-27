@@ -1,12 +1,32 @@
 const textW = document.querySelector('.text-wrapper');
 const textArea = document.querySelector('#textArea');
-const originText = document.querySelector('.text').innerHTML
+var originText = document.querySelector('#text').innerHTML
 const resetButton = document.querySelector('#reset')
 const theTimer = document.querySelector('.timer')
 textArea.value = ""
 let timer = [0,0,0,0];
 let interval;
 let timeRunning = false;
+
+function addText(){
+
+    originText = document.getElementById('addtext').value
+    if (originText.length < 700){
+
+        if (originText.replace(/ /g, "") != ''){
+            document.querySelector('#text').innerHTML = originText
+        }
+        else {
+            var originText = document.querySelector('#text').innerHTML
+            document.getElementById('addtext').value = ''
+        }
+    }
+    else {
+        alert("cannot add text more than 700 characters")
+        document.getElementById('addtext').value = ''
+    }
+
+}
 
 function leadingZero(time) {
     if (time <= 9) {
