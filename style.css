@@ -96,3 +96,11 @@ body {
     color: red;
     text-align: center;
 }
+
+#changebtn {
+    border:none;
+    border:solid 2px transparent;
+    border-radius: 5px;
+    background: rgba(255, 255, 255,0);
+    color: white;
+}
